@@ -1,0 +1,394 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.conteiner {
+  width: 980px;
+  margin: 0 auto;
+}
+header {
+  height: 150px;
+  background: black;
+  position: relative;
+}
+.slideshow {
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+header img {
+  margin-left: 200px;
+}
+nav {
+  height: 50px;
+  background: rgb(223, 113, 39);
+  margin-bottom: 5px;
+}
+nav .menu ul {
+  list-style: none;
+}
+nav .menu ul li {
+  float: right;
+  line-height: 50px;
+  padding: 0 15px;
+  margin-right: 50px;
+}
+nav .menu ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+nav .search {
+  line-height: 50px;
+  float: left;
+  margin-left: 200px;
+  size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  background-color: rgb(223, 103, 51);
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  display: inline-block;
+  padding: 20px 15px;
+  position: relative;
+}
+ul li a {
+  text-decoration: none;
+  color: brown;
+  font-size: 20px;
+}
+.menu ul li a:hover {
+  color: rgb(237, 200, 132);
+}
+ul li ul {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 100%;
+  left: 0;
+  width: 290px;
+  border-radius: 0px 0px 10px 0px;
+}
+ul li:hover ul {
+  visibility: visible; /*hiển thị menu con*/
+}
+ul li ul li {
+  display: block;
+  padding-right: 0;
+} /*Trình bày menu con*/
+
+.a :hover {
+  text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+ul li ul li a:hover {
+  text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: aquamarine;
+}
+
+div .search input {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+}
+div .search button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  background: rgba(245, 221, 195, 0.951);
+  font-size: 15px;
+}
+/*phan dau trang web*/
+
+/*phan than trang web*/
+
+.box {
+  border: 1px solid #000000;
+
+  background: #464545;
+}
+.tieudeMovie img {
+  width: 220px;
+  height: 340px;
+  padding-left: 500px;
+}
+.date_thedark {
+  color: rgb(143, 143, 151);
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  padding-left: 480px;
+}
+.tenphim {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding-top: 15px;
+  color: aliceblue;
+  font-size: 40px;
+  padding-left: 460px;
+}
+.danhgia {
+  display: flex;
+}
+.button {
+  background: #464545;
+}
+#button {
+  background: #464545;
+  padding-left: 500px;
+}
+.button-click {
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  background: #464545;
+  height: 30px;
+  flex: 0 0 50%;
+  margin: 3px;
+  font-size: 13.5px;
+  color: aliceblue;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.button-click:hover {
+  background: #b0acac;
+}
+.note_movie {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  color: aliceblue;
+  font-size: 15px;
+  padding-left: 480px;
+}
+.dongkengang::after {
+  content: "";
+  display: block;
+  clear: both;
+  border-top: 0.01px solid rgb(255, 255, 255); /* Màu và độ rộng của đường kẻ */
+  width: 962px;
+  margin-top: 1px; /* Khoảng cách giữa article và đường kẻ */
+  margin-bottom: 2px;
+  margin-left: 480px;
+}
+.director {
+  margin-left: 480px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.director span:hover {
+  text-decoration: underline;
+}
+.line {
+  display: inline-block;
+  width: 4px;
+  height: 22px;
+  background-color: rgb(255, 191, 62);
+  margin-left: 10px;
+}
+.new_item img {
+  width: 200px;
+  height: 280px;
+}
+.new_list {
+  padding-left: 460px;
+}
+.goiy {
+  background: #eceaea;
+}
+.new_item {
+  background: #ffffff;
+}
+article .new_list .new_item {
+  width: 212px;
+  padding: 12px;
+  float: left;
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+article .new_list .new_item h4{
+   font-weight: normal;
+}
+article .new_list .new_item h4:hover{
+    text-decoration: underline;
+}
+article .new_list .new_item img {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+article .new_list .new_item .content {
+  font-size: 13px;
+}
+article .new_list .new_item {
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* button ở dưới img/video */
+#button_popup {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+ 
+}
+#muave{
+  margin-left: 20px;
+  text-align: center;
+  background: red;
+  font-weight:800;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  
+}
+
+.button-Watchlist {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 7px;
+}
+.button-Watchlist:hover {
+  background-color: #f2fafd;
+}
+#gachchan:hover {
+  text-decoration: underline;
+}
+
+/*footer */
+.dongke::after {
+  content: "";
+  display: block;
+  clear: both;
+  border-top: 3px solid rgb(229, 111, 61); /* Màu và độ rộng của đường kẻ */
+  margin-top: 40px; /* Khoảng cách giữa article và đường kẻ */
+  margin-bottom: 30px;
+}
+.grid {
+  width: 100%;
+
+  margin: 0 auto;
+}
+.grid_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.grid_colum-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+footer {
+  padding-top: 5px; /* Khoảng cách 5px giữa article và footer */
+  height: 50px;
+}
+footer h3 {
+  margin-left: 10px;
+}
+.footer-heading {
+  padding-left: 20px; /* Để tạo khoảng trống cho biểu tượng nút lùi */
+  background: url("path-to-your-icon.png") left center no-repeat; /* Đặt hình ảnh biểu tượng nút lùi */
+  background-size: 16px; /* Điều chỉnh kích thước của biểu tượng nút lùi */
+}
+.footer_list .footer-item {
+  background: white;
+  display: block;
+  list-style-type: disc;
+}
+.footer_list .footer-item::before {
+  content: "•"; /* Sử dụng dấu chấm hoặc ký tự tùy ý bạn muốn */
+  display: inline-block;
+  margin-right: 5px; /* Khoảng cách giữa dấu chấm và nội dung */
+}
+.footer_download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_download-apps {
+  display: flex;
+  flex-direction: column; /* Đặt hướng của flexbox thành cột */
+}
+.footer_dowwnload img {
+  width: 150px;
+  height: 70px;
+}
+.footer_download-apps img {
+  margin-top: 20px; /* Tạo khoảng cách giữa các hình ảnh */
+  width: 200px;
+  height: 90px;
+}
+.footer_text {
+  margin-left: 40%;
+  padding-top: 10px;
+}
+
+.grid_colum-2-4 ul li a:hover {
+  color: rgb(233, 203, 146);
+  text-decoration: underline;
+}
+
+/*di chuột vào ảnh sẽ động */
+.image-to-change {
+  transition: transform 0.3s; /* Áp dụng hiệu ứng transition */
+}
+
+.image-to-change:hover {
+  transform: scale(1.1); /* Khi di chuột vào, phóng to hình ảnh lên */
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}

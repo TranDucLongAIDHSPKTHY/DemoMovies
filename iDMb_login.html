@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="iDMb_login.css" type="text/css" />
+    <title>iDMb_Đăng nhập</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-login">
+        <h1>Đăng nhập</h1>
+        <div class="form-text">
+          <label> Username</label>
+          <input type="text" />
+        </div>
+        <div class="form-text">
+          <label> Password</label>
+          <input type="password" />
+        </div>
+        <button><a href="trangChu.html"> Đăng nhập</a></button>
+        <span
+          >Bạn chưa có tài khoản? Đăng ký
+          <a href="iDMb_Sign up.html">Tại đây</a>
+        </span>
+      </form>
+      <div>
+        <script>
+          const formLogin = document.querySelectorAll(".form-text input");
+          const formLable1 = document.querySelectorAll(".form-text lable");
+          for (let i = 0; i < 2; i++) {
+            formLogin[i].addEventListener("mouseover", function () {
+              formLable1[i].classList.add("focus");
+            });
+            formLogin[i].addEventListener("mouseout", function () {
+              if (formLogin[i].value == "") {
+                formLable1[i].classList.remove("focus");
+              }
+            });
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.invoice {
+  width: 400px;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+/* Header, customer, movie styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table cell styles */
+
+.total {
+  font-weight: bold;
+  text-align: right;
+}
+

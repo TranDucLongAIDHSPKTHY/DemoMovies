@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    
+    <link rel="stylesheet" href="iDMb_Sign up.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-login">
+        <h1>Đăng ký</h1>
+        <div class="form-text">
+          <label> Username</label>
+          <input type="text" />
+        </div>
+        <div class="form-text">
+          <label> Password</label>
+          <input type="password" />
+        </div>
+        <div class="form-text">
+          <label for="email"> Email</label>
+          <input type="text" id="email" />
+        </div>
+
+        <button onclick="test()">Đăng ký</button>
+        <span
+          >Bạn có muốn Đăng nhập? <a href="iDMb_login.html">Tại đây</a>
+        </span>
+      </form>
+      <script>
+        function test() {
+          var email = document.getElementById("email").value; // Lấy giá trị từ ô nhập liệu
+          var pat =
+            /^[a-zA-Z]+[a-zA-Z0-9]*[-_]?[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/;
+          // + là kiểm tra ký tự xuất hiện một hoặc nhiều lần //
+          // * là xuất hiện không hoặc nhiều lần //
+          // ? là xuất hiện không hoặc 1 lần //
+          if (pat.test(email)) {
+            alert("Email hợp lệ");
+          } else {
+            alert("Email không hợp lệ");
+          }
+        }
+      </script>
+      <div>
+        <script>
+          const formLogin = document.querySelectorAll(".form-text input");
+          const formLable1 = document.querySelectorAll(".form-text lable");
+          for (let i = 0; i < 2; i++) {
+            formLogin[i].addEventListener("mouseover", function () {
+              formLable1[i].classList.add("focus");
+            });
+            formLogin[i].addEventListener("mouseout", function () {
+              if (formLogin[i].value == "") {
+                formLable1[i].classList.remove("focus");
+              }
+            });
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
